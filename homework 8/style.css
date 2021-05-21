@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    position: relative;
+    padding-top: 32px;
+    min-height: 600px;
+    width: 100%;
+    background-image: url("https://www.transparenttextures.com/patterns/cross-stripes.png");
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.header-cover {
+    position: relative;
+    background-image: url(imgs/bg1.jpg);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    z-index: 0;
+}
+
+#upper-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 110px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#upper-header h1 {
+    color: #14AFCA;
+    cursor: pointer;
+}
+
+#upper-header h1 span {
+    color: #3E4C4E;
+    font-weight: lighter;
+}
+
+#upper-header ul li {
+    display: inline;
+    margin: 0px 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #3E4C4E;
+    transition: .10s ease;
+}
+
+#upper-header ul li:hover {
+    color: #14AFCA;
+}
+
+#header-content {
+    text-align: center; color: #fff; margin-top: 150px; font-size: 52px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 8rem 0;
+    position: relative;
+    z-index: -1;
+}
+
+section h1 {
+    color: #14AFCA;
+    font-size: 50px;
+    margin-bottom: 31px;
+}
+
+section h2,
+h4,
+p {
+    color: #424F57;
+    margin-bottom: 31px;
+}
+
+.section-cover {
+    background-image: url("https://www.transparenttextures.com/patterns/cross-stripes.png");
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+    z-index: 2;
+}
+
+.container-companies {
+    text-align: center;
+    background-image: url(imgs/bg2.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.container-companies h4 {
+    color: #fff;
+}
+
+.logo-container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 50px;
+    row-gap: 120px;
+}
+
+.people-container {
+    display: flex;
+    justify-content: space-between
+}
+
+.people-container-item {
+    margin-top: 10px;
+    max-width: 300px;
+}
+
+.people-container-item img {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 35px;
+}
+
+.container-testimonails {
+    background-image: url(imgs/bg3.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.container-testimonails h4 {
+    color: #fff;
+}
+
+.triangle {
+    position: absolute;
+    z-index: 99;
+    padding: 0;
+    width: 100%;
+    height: 75px;
+    background-image: linear-gradient(to top right, transparent 50%, #fff 0%, #fff 100%),
+                      linear-gradient(to top left, transparent 50%, #fff 0%, #fff 100%);
+    background-position: top left, top right;
+    background-repeat: no-repeat;
+    background-size: 50.1% 100%;
+}
+
+@media (max-width: 70em) {
+    header {
+        padding: 0;
+    }
+    #upper-header {
+        flex-direction: column;
+    }
+
+    #upper-header h1 {
+        margin-top: 32px;
+    }
+
+    #upper-header ul li {
+        display: block;
+        margin: 50px 0px;
+        text-align: center;
+    }
+
+    #header-content {
+        padding-bottom: 150px;
+    }
+
+    .people-container {
+        align-items: center;
+        flex-direction: column;
+    }
+}

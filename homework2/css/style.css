@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;    
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+body {
+    font-family: "Myriad Pro";
+    font-size: 100%;
+    letter-spacing: 1px;
+}
+
+header {
+    height: 250px;
+}
+.logo {
+    margin-top: 60px;
+    font-size: 80px;
+}
+.logo>span {
+    color: #4bcaff;
+}
+.menu {
+    margin-top: 60px;
+    height: 67px;
+    background-color: #35444f;
+    text-align: center;
+}
+.menu-item {
+    display: inline-block;
+    font-size: 24px;
+    color: white;
+    padding: 0px 40px;
+    line-height: 67px;
+}
+.menu-item:hover {
+    background:#222f3a;
+    box-shadow:0 0 5px #818181;
+}
+
+main {
+    height: 888px;
+}
+.sidebar {
+    width: 340px;
+    float: left;
+    border: 1px solid #000000;
+}
+.side-menu {
+    width: 100%;
+}
+.side-menu a{
+    transition: 0.3s;
+    display: block;
+    color: black;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-size: 27px;
+    
+    
+}
+.side-menu a:hover{
+    background: #dbdbdb;
+    padding-left: 60px;
+}
+
+.main-block {
+    float: right;
+}
+.text-block {
+    width: 830px;
+    margin-left: 30px;
+    margin-top: 50px;
+    line-height: 1.5;
+}
+
+footer {
+    height: 70px;
+    background-color: #b4b7ba;
+    margin-bottom: 30px;
+    letter-spacing: 0px;
+}
+.footermenu {
+    float: left;
+    font-size: 24px;
+    line-height: 70px;
+    margin-left: 25px;
+}
+.footermenu a{
+    color: black;
+    padding: 0 10px;
+    transition:  0.5s;
+}
+.footermenu a:hover {
+    color: #3181a6;
+    text-decoration:underline;
+}
+.copyright {
+    float: right;
+    line-height: 70px;
+    font-size: 22px;
+    margin-right: 35px;
+}
